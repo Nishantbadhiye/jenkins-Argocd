@@ -4,8 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/Nishantbadhiye/jenkins-Argocd.git'
+          git branch: 'main', url: 'https://github.com/Nishantbadhiye/jenkins-Argocd.git'
       }
     }
     stage('Build') {
